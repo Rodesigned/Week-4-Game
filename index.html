@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>week-4-game</title>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- Style CSS -->
+<link rel="stylesheet" href="assets/css/style.css">		
+</head>
+<body>
+<main role="main"> 
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Crystals Collector</h1>
+      <p>The object of this game is to match the magic number shown in the box. By clicking on the magic crystals.</p>
+    </div>
+  </div>
+  <div class="container"> 
+    <!-- Example row of columns -->  
+    <div class="row">
+      <div class="col-md-4">
+        <h1>Magic Number</h1>
+		  <h3 id="ran_num"></h3>
+      </div>
+		
+		<div class="col-md-4">
+			<div id="game-stat">
+          <div>
+			  <h4 id="wins">Wins:</h4>
+          </div>
+          <br >
+          <div>
+            <h4 id="losses">Losses: </h4>
+          </div>
+        </div>
+      </div>
+		
+      <div class="col-md-4">
+        <h1>Total Score</h1>
+		  <h3 id="score_num">dummy num</h3>
+      </div>
+    </div>
+	  
+<div id="crystals">	  
+    <div class="row magic_crs">
+      <div class="col-md-3"><img id="crystal_one" src="assets/images/crystal1.png" alt="crystal image"></div>
+      <div class="col-md-3"><img id="crystal_two" src="assets/images/crystal3.png" alt="crystal image"></div>
+      <div class="col-md-3"><img id="crystal_three" src="assets/images/crystal2.png" alt="crystal image"></div>
+      <div class="col-md-3"><img id="crystal_four" src="assets/images/crystal4.png" alt="crystal image"></div>
+    </div>
+    <hr>
+  </div>
+</div>
+  <!-- /container --> 
+  
+</main>
+<footer class="container">
+  <p>&copy; Rosita Cabrera 2017</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- javascript -->	
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+	
+</body>
+</html>
