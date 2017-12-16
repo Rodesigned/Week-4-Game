@@ -17,41 +17,38 @@
     <div class="container">
       <h1>Crystals Collector</h1>
       <p>The object of this game is to match the magic number shown in the box. By clicking on the magic crystals.</p>
+		<div id="alerted"></div>
     </div>
   </div>
   <div class="container"> 
     <!-- Example row of columns -->  
     <div class="row">
       <div class="col-md-4">
-        <h1>Magic Number</h1>
-		  <h3 id="ran_num"></h3>
+        <h2>Magic Number</h2>
+		  <h3 id="number-to-guess"></h3>
       </div>
 		
 		<div class="col-md-4">
-			<div id="game-stat">
+		<div id="game-stat">
           <div>
-			  <h4 id="wins">Wins:</h4>
-          </div>
-          <br >
+			  <h4>Wins:<span id="totalWins"> dummy</span></h4>
+		  </div>
+          
           <div>
-            <h4 id="losses">Losses: </h4>
-          </div>
+			  <h4>Losses:<span id="totaLosses"> dummy</span></h4>
+		  </div>
         </div>
       </div>
 		
       <div class="col-md-4">
-        <h1>Total Score</h1>
-		  <h3 id="score_num">dummy num</h3>
+        <h2>Total Score</h2>
+		  <h3 id="score_num"></h3>
       </div>
     </div>
 	  
+<div class="row magic_crs">	  
 <div id="crystals">	  
-    <div class="row magic_crs">
-      <div class="col-md-3"><img id="crystal_one" src="assets/images/crystal1.png" alt="crystal image"></div>
-      <div class="col-md-3"><img id="crystal_two" src="assets/images/crystal3.png" alt="crystal image"></div>
-      <div class="col-md-3"><img id="crystal_three" src="assets/images/crystal2.png" alt="crystal image"></div>
-      <div class="col-md-3"><img id="crystal_four" src="assets/images/crystal4.png" alt="crystal image"></div>
-    </div>
+ </div>
     <hr>
   </div>
 </div>
