@@ -8,61 +8,71 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <!-- Style CSS -->
-<link rel="stylesheet" href="assets/css/style.css">		
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
+
 <body>
-<main role="main"> 
+<main role="main">
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
-    <div class="container">
+  <div class="container">
+    <header>
       <h1>Crystals Collector</h1>
-      <p>The object of this game is to match the magic number shown in the box. By clicking on the magic crystals.</p>
-		<div id="alerted"></div>
-    </div>
+      <p>The object of this game is to match the magic number by clicking on the magic crystals.</p>
+      <div id="alerted"></div>
+    </header>
   </div>
-  <div class="container"> 
-    <!-- Example row of columns -->  
-    <div class="row">
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row all_numbers">
       <div class="col-md-4">
-        <h2>Magic Number</h2>
-		  <h3 id="number-to-guess"></h3>
+        <h3>Magic Number</h3>
+        <h3 id="number-to-guess"></h3>
       </div>
-		
-		<div class="col-md-4">
-		<div id="game-stat">
+      <div class="col-md-4">
+        <div id="game-stat">
           <div>
-			  <h4>Wins: <span id="totalWins"></span></h4>
-		  </div>
-          
+            <h4>Wins: <span id="totalWins"></span></h4>
+          </div>
           <div>
-			  <h4>Losses: <span id="totalLosses"></span></h4>
-		  </div>
+            <h4>Losses: <span id="totalLosses"></span></h4>
+          </div>
         </div>
       </div>
-		
       <div class="col-md-4">
-        <h2>Total Score</h2>
-		  <h3 id="score_num">0</h3>
+        <h3>Total Score</h3>
+        <h3 id="score_num">0</h3>
       </div>
     </div>
-<div class="row magic_crs">	  
-<div id="crystals">	  
- </div>
-    
+    <div class="row magic_crs">
+      <div id="crystals"> </div>
+    </div>
   </div>
+	
+<div class="container">
+<div class="col-md-12">
+<h4>Instructions</h4>
+<ul>
+<li>You will be given a random number when you start the game.</li>
+<li>There are 4 crystals which hold a random value between 1 and 12.</li> 
+<li>When you click on the Crystals the number values will be added to the total score.</li>
+<li>Your objective is to match your score with the random number given to you at the start of the game.</li>
+<li>You will not see the value of the crystal until you click on it.</li>
+<li>The Crystals will reset when you start a new game</li>
+</ul>
+</div>	
+	
 </div>
-  <!-- /container --> 
-  
+  <!-- /container -->
 </main>
-<hr>
-<footer class="container">
+<footer class="footer col-sm-12">
+  <hr>
   <p>&copy; Rosita Cabrera 2017</p>
 </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<!-- javascript -->	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> 
+<!-- javascript --> 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
-	
 </body>
 </html>
