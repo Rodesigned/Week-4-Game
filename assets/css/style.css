@@ -53,8 +53,9 @@ img {
 	margin-bottom: 40px
 }
 
-#alerted {
+div #alerted {
 	color: #8A1315;
+	font-size: 18px;
 }
 
 ul li {

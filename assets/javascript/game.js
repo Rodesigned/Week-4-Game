@@ -11,6 +11,7 @@
 // The app should show the number of games the player wins and loses. Do not refresh the page as a means to restart the game.
 
 
+//GLOBAL VARIABLES//
 
 // Create the Global variable to store the random numbers.
 var targetNumber = Math.floor((Math.random() * 101) + 19);
@@ -35,23 +36,23 @@ var reset = function() {
     targetNumber = Math.floor((Math.random() * 101) + 19);
     numberOptions = Math.floor((Math.random() * 12) + 1);
     $("#number-to-guess").text(targetNumber);
-    // counter = 0;
-    // wins = 0;
-    // $('#totalWins').text(wins);
-    // losses = 0;
-    // $('#totalLosses').text(losses);
+    counter = 0;
+	$("#score_num").text(counter);
+	
 };
 
 if (counter === targetNumber) {
     wins++;
     $('#alerted').text("You Won");
     $('#totalWins').text(wins);
-    reset();
+    
+	
 } else if (counter > targetNumber) {
     losses++;
     $('#alerted').text("You Lost");
     $('#totalLosses').text(losses);
-    reset();
+    
+	reset();
 }
 
 
@@ -116,15 +117,17 @@ $(".crystal-image").on("click", function() {
         $('#alerted').text("You win!");
         wins++;
         $('#totalWins').text(wins);
-
         reset();
+		window.setTimeout(function() { $("#alerted").text(""); }, 3000);
+		
     } else if (counter >= targetNumber) {
         $('#alerted').text("You lose!!");
         losses++;
         $('#totalLosses').text(losses);
-
-        reset();
+		window.setTimeout(function() { $("#alerted").text(""); }, 3000);
+		reset();
     }
 
-
 });
+
+
